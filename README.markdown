@@ -3,8 +3,8 @@
 This is a web application developed for Energy Data Simulation Challenge3.
 
 * Default Administrator Account:
-> Username: admin
 
+> Username: admin
 
 > Password: admin
 
@@ -12,7 +12,6 @@ This is a web application developed for Energy Data Simulation Challenge3.
 
 
 > rake wangg:csv
-
 
 > rake wangg:add_account
 
