@@ -34,4 +34,11 @@ namespace :wangg do
   	end
 
   end
+
+  task add_account: :environment do
+    admin_user=AdminUser.new
+    admin_user.username="admin"
+    admin_user.password="admin"
+    admin_user.save
+  end
 end
