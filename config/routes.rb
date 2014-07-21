@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+root "houses#index"
 get 'access/index', :to=>"access#index"
 get 'access/logout', :to=>"access#logout"
 get 'access/login', :to=>"access#login"

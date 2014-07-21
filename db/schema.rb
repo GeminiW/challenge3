@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140719061908) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "admin_users", force: true do |t|
     t.string   "username",        limit: 25
     t.string   "password_digest"
@@ -25,8 +28,8 @@ ActiveRecord::Schema.define(version: 20140719061908) do
     t.integer  "house_id"
     t.integer  "year"
     t.integer  "month"
-    t.float    "temperature",       limit: 24
-    t.float    "daylight",          limit: 24
+    t.float    "temperature"
+    t.float    "daylight"
     t.integer  "energy_production"
     t.datetime "created_at"
     t.datetime "updated_at"
