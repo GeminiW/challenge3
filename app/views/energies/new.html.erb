@@ -4,10 +4,10 @@
 <div class="energies new">
 	<fieldset>
 	<legend>New Energy Record</legend>
-	<%= form_for(:energy, :url=>{:action=>'create'}) do |f|%>
+	<%= form_for(:energy, :url=>{:action=>"create"}) do |f|%>
 		<%=render(:partial=>"form",:locals=>{:f=>f})%>
 		<div class="form-buttons">
-			<%= form_tag(energies_path,:method=>'post') do %>
+			<%= form_tag(energies_path,:method=>"post") do %>
 				<%=submit_tag("Create Energy Record")%>
 			<% end %>
 		</div>

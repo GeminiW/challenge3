@@ -6,7 +6,7 @@
 	<fieldset>
 	<legend>Delete Energy</legend>
 
-	<%= form_for(:energy, :url=>{:action=>'destroy',:id=>@energy.id}) do |f| %>
+	<%= form_for(:energy, :url=>{:action=>"destroy",:id=>@energy.id}) do |f| %>
 
 		<p><strong>Are you sure you want to delete this energy record?</strong></p>
 
@@ -34,7 +34,7 @@
 		</table>
 
 		<div class="form-buttons">
-			<%= form_tag(energy_path(@energy.id),:method=>'delete') do %>
+			<%= form_tag(energy_path(@energy.id),:method=>"delete") do %>
   				<%= submit_tag('Delete Energy Record') %>
 			<% end %>
 		</div>

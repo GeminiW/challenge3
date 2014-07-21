@@ -27,9 +27,9 @@
 			<td class="center"><%= house.has_child ? 'Yes' : 'No' %></td>
 			<td class="center"><%= house.energies.size%></td>
 			<td class="actions">
-				<%= link_to("Edit",edit_house_path(house.id),:class=>'action edit')%>
-				<%= link_to("Delete",delete_house_path(house.id),:class=>'action delete')%>
-				<%= link_to("Records",house_path(house.id),:class=>'action record')%>
+				<%= link_to("Edit",edit_house_path(house.id))%>
+				<%= link_to("Delete",delete_house_path(house.id))%>
+				<%= link_to("Records",house_path(house.id))%>
 			</td>
 		</tr>
 		<% end%>
