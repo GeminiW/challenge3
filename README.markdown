@@ -2,6 +2,8 @@
 
 This is a web application developed for Energy Data Simulation Challenge3.
 
+* It is already deployed at Heroku. [Click me](http://challenge3.herokuapp.com/) to check.
+
 * Default Administrator Account:
 
 > Username: admin
