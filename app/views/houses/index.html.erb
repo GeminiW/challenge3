@@ -2,7 +2,9 @@
 <div class="houses index">
 	<h2>Houses</h2>
 
+	
 	<%= link_to("<< Back to Energy Record List",energies_path) %><br />
+	<%= link_to("AdminUser Page","/access/index") %><br/>
 	<%= link_to("New House", new_house_path, :class=>'action_new')%>
 
 	<div class="notice"><%= pluralize(@houses.size,'house')%> found</div>
